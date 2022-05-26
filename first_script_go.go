@@ -7,7 +7,7 @@ import (
 func main() {
 
 	for i := 0; i < 10; i++ {
-		fmt.Print("i: ", " ", i)
+		fmt.Print("i: ", i, " ")
 	}
 
 }
