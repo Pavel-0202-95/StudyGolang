@@ -10,6 +10,4 @@ func main() {
 		fmt.Print("i: ", i, " ")
 	}
 
-	fmt.Println("Typed up a Println")
-
 }
