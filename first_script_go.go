@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+/*
 func CreateArr(arr[]) {
 
 	for i := 0; i < len(arr); i++ {
@@ -11,6 +12,7 @@ func CreateArr(arr[]) {
 	}
 
 }
+*/
 
 func main() {
 
@@ -20,8 +22,8 @@ func main() {
 
 	fmt.Println("Typed up a Println")
 
-	arr1 = [4]int{1, 2, 3, 4}
+	//arr1 = [4]int{1, 2, 3, 4}
 
-	CreateArr(arr1)
+	//CreateArr(arr1)
 
 }
