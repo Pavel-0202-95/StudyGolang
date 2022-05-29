@@ -28,4 +28,8 @@ func main() {
 
 	fmt.Print("Write Dock file with info")
 
+	fmt.Print("Write Dock file with info")
+	fmt.Print("Write Dock file with info")
+	fmt.Print("Write Dock file with info")
+
 }
