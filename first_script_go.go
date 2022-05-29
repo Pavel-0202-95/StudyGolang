@@ -26,6 +26,4 @@ func main() {
 
 	//CreateArr(arr1)
 
-	fmt.Print("Write Dock file with info")
-
 }
