@@ -40,6 +40,6 @@ func main() {
 		arr1 = append(arr1, i)
 	}
 
-	fmt.Println(arr1)
+	fmt.Println(arr1, len(arr1)) // Add new method len(arr1)
 
 }
