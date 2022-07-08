@@ -32,4 +32,14 @@ func main() {
 	fmt.Print("Write Dock file with info")
 	fmt.Print("Write Dock file with info")
 
+	// здесь добавили массив и заполнили его, а также вывели.
+
+	var arr1 []int
+
+	for i := 1; i < 11; i++ {
+		arr1 = append(arr1, i)
+	}
+
+	fmt.Println(arr1)
+
 }
