@@ -12,7 +12,7 @@ type DifficultData struct {
 func a() {
 	fmt.Println("Inside a()")
 	defer func() {
-		if c := recover(); c != nil {
+		if c := recover(); c != nil { // в recover можно засунуть что угодно любую структуру.
 			fmt.Printf("Our struct: %v\n", c)
 			fmt.Println("Recover inside a()!")
 		}
@@ -29,11 +29,13 @@ func b() {
 		a:   10,
 		str: "test",
 	}
-	panic(diffStruct)
+	panic(diffStruct) // прога крашиться ->
 	fmt.Println("Exiting b()")
 }
 
 func main() {
 	a()
 	fmt.Println("main() ended!")
+
+	fmt.Println("main() ended2!")
 }

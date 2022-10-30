@@ -1,5 +1,7 @@
 package main
 
+// В примере реализовано не сбалансированное двоичное дерево.
+
 import (
 	"fmt"
 	"math/rand"
@@ -17,12 +19,12 @@ func traverse(t *Tree) {
 		return
 	}
 	traverse(t.Left)
-	fmt.Print(t.Value, " ")
-	traverse(t.Right)
+	fmt.Print(t.Value, " ") // 1 - A
+	traverse(t.Right)       // после этого шага мы переходим на С
 }
 
 func create(n int) *Tree {
-	var t *Tree
+	var t *Tree // head
 	rand.Seed(time.Now().Unix())
 	for i := 0; i < 2*n; i++ {
 		temp := rand.Intn(n * 2)
@@ -47,7 +49,7 @@ func insert(t *Tree, v int) *Tree {
 }
 
 func main() {
-	tree := create(10)
+	tree := create(4)
 	fmt.Println("The value of the root of the tree is", tree.Value)
 	traverse(tree)
 	fmt.Println()
